@@ -31,6 +31,7 @@
 		2E4A8D8A2978A294007E831C /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4A8D892978A294007E831C /* LoginViewModel.swift */; };
 		2E4A8D8D2978AA34007E831C /* ForgotPasswordService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4A8D8C2978AA34007E831C /* ForgotPasswordService.swift */; };
 		2E4A8D902978AC4B007E831C /* ForgotPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4A8D8F2978AC4B007E831C /* ForgotPasswordViewModel.swift */; };
+		2E4A8D942978BBFF007E831C /* emergency-sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2E4A8D932978BBFF007E831C /* emergency-sound.mp3 */; };
 		2EA2A024297721FA00F1FCF9 /* AuthApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA2A023297721FA00F1FCF9 /* AuthApp.swift */; };
 		2EA2A028297721FA00F1FCF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EA2A027297721FA00F1FCF9 /* Assets.xcassets */; };
 		2EA2A02B297721FA00F1FCF9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EA2A02A297721FA00F1FCF9 /* Preview Assets.xcassets */; };
@@ -57,6 +58,7 @@
 		2E4A8D892978A294007E831C /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		2E4A8D8C2978AA34007E831C /* ForgotPasswordService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordService.swift; sourceTree = "<group>"; };
 		2E4A8D8F2978AC4B007E831C /* ForgotPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewModel.swift; sourceTree = "<group>"; };
+		2E4A8D932978BBFF007E831C /* emergency-sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "emergency-sound.mp3"; sourceTree = "<group>"; };
 		2EA2A020297721FA00F1FCF9 /* Auth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Auth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EA2A023297721FA00F1FCF9 /* AuthApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthApp.swift; sourceTree = "<group>"; };
 		2EA2A027297721FA00F1FCF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -159,6 +161,8 @@
 		2E12398B2977694900BC5684 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				2E4A8D922978BBD2007E831C /* Sounds */,
+				2E4A8D912978BB81007E831C /* New Group */,
 				2E12398C2977695B00BC5684 /* View */,
 			);
 			path = Home;
@@ -286,6 +290,21 @@
 			path = "View Model";
 			sourceTree = "<group>";
 		};
+		2E4A8D912978BB81007E831C /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		2E4A8D922978BBD2007E831C /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				2E4A8D932978BBFF007E831C /* emergency-sound.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
 		2EA2A017297721FA00F1FCF9 = {
 			isa = PBXGroup;
 			children = (
@@ -394,6 +413,7 @@
 			files = (
 				2EA2A02B297721FA00F1FCF9 /* Preview Assets.xcassets in Resources */,
 				2EA2A028297721FA00F1FCF9 /* Assets.xcassets in Resources */,
+				2E4A8D942978BBFF007E831C /* emergency-sound.mp3 in Resources */,
 				2E1239712977369700BC5684 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
