@@ -26,6 +26,9 @@
 		2E17CBAC2978770D00B78B97 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E17CBAB2978770D00B78B97 /* RegistrationViewModel.swift */; };
 		2E17CBB029788E8800B78B97 /* SessionUserDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E17CBAF29788E8800B78B97 /* SessionUserDetails.swift */; };
 		2E17CBB32978902100B78B97 /* SessionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E17CBB22978902100B78B97 /* SessionService.swift */; };
+		2E2A951C299170260095A1AD /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 2E2A951B299170260095A1AD /* FirebaseFirestore */; };
+		2E2A952429917FE20095A1AD /* NewsDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2A952329917FE20095A1AD /* NewsDetails.swift */; };
+		2E2A9526299180200095A1AD /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2A9525299180200095A1AD /* NewsViewModel.swift */; };
 		2E4A8D8429789F97007E831C /* LoginCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4A8D8329789F97007E831C /* LoginCredentials.swift */; };
 		2E4A8D872978A03B007E831C /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4A8D862978A03B007E831C /* LoginService.swift */; };
 		2E4A8D8A2978A294007E831C /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4A8D892978A294007E831C /* LoginViewModel.swift */; };
@@ -53,6 +56,8 @@
 		2E17CBAB2978770D00B78B97 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		2E17CBAF29788E8800B78B97 /* SessionUserDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionUserDetails.swift; sourceTree = "<group>"; };
 		2E17CBB22978902100B78B97 /* SessionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionService.swift; sourceTree = "<group>"; };
+		2E2A952329917FE20095A1AD /* NewsDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetails.swift; sourceTree = "<group>"; };
+		2E2A9525299180200095A1AD /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
 		2E4A8D8329789F97007E831C /* LoginCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCredentials.swift; sourceTree = "<group>"; };
 		2E4A8D862978A03B007E831C /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		2E4A8D892978A294007E831C /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
@@ -73,6 +78,7 @@
 				2E12396D2977321100BC5684 /* FirebaseAnalytics in Frameworks */,
 				2E17CBA72978731D00B78B97 /* FirebaseAuth in Frameworks */,
 				2E17CBA92978732500B78B97 /* FirebaseDatabase in Frameworks */,
+				2E2A951C299170260095A1AD /* FirebaseFirestore in Frameworks */,
 				2E12396F2977321100BC5684 /* FirebaseCrashlytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -83,6 +89,7 @@
 		2E1239732977481100BC5684 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				2E2A952029917EEB0095A1AD /* News */,
 				2E17CBAD29788E4B00B78B97 /* Session */,
 				2E12398F29776B1C00BC5684 /* Forgot Password */,
 				2E12398B2977694900BC5684 /* Home */,
@@ -162,7 +169,6 @@
 			isa = PBXGroup;
 			children = (
 				2E4A8D922978BBD2007E831C /* Sounds */,
-				2E4A8D912978BB81007E831C /* New Group */,
 				2E12398C2977695B00BC5684 /* View */,
 			);
 			path = Home;
@@ -250,6 +256,31 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		2E2A952029917EEB0095A1AD /* News */ = {
+			isa = PBXGroup;
+			children = (
+				2E2A952229917F1E0095A1AD /* Model */,
+				2E2A952129917EF60095A1AD /* View Model */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		2E2A952129917EF60095A1AD /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				2E2A9525299180200095A1AD /* NewsViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		2E2A952229917F1E0095A1AD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2E2A952329917FE20095A1AD /* NewsDetails.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		2E4A8D8229789F73007E831C /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -288,13 +319,6 @@
 				2E4A8D8F2978AC4B007E831C /* ForgotPasswordViewModel.swift */,
 			);
 			path = "View Model";
-			sourceTree = "<group>";
-		};
-		2E4A8D912978BB81007E831C /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 		2E4A8D922978BBD2007E831C /* Sounds */ = {
@@ -365,6 +389,7 @@
 				2E12396E2977321100BC5684 /* FirebaseCrashlytics */,
 				2E17CBA62978731D00B78B97 /* FirebaseAuth */,
 				2E17CBA82978732500B78B97 /* FirebaseDatabase */,
+				2E2A951B299170260095A1AD /* FirebaseFirestore */,
 			);
 			productName = Auth;
 			productReference = 2EA2A020297721FA00F1FCF9 /* Auth.app */;
@@ -452,6 +477,7 @@
 				2E1239822977542F00BC5684 /* InputPasswordView.swift in Sources */,
 				2E123979297748E600BC5684 /* LoginView.swift in Sources */,
 				2E123980297751FD00BC5684 /* PreviewLayoutComponentModifier.swift in Sources */,
+				2E2A952429917FE20095A1AD /* NewsDetails.swift in Sources */,
 				2E17CBA429786CCC00B78B97 /* RegistrationService.swift in Sources */,
 				2E12398A2977653300BC5684 /* CloseModifier.swift in Sources */,
 				2E17CBB32978902100B78B97 /* SessionService.swift in Sources */,
@@ -463,6 +489,7 @@
 				2E123984297757D700BC5684 /* ButtonView.swift in Sources */,
 				2E17CBAC2978770D00B78B97 /* RegistrationViewModel.swift in Sources */,
 				2E17CBA129786BFB00B78B97 /* RegistrationDetails.swift in Sources */,
+				2E2A9526299180200095A1AD /* NewsViewModel.swift in Sources */,
 				2E4A8D902978AC4B007E831C /* ForgotPasswordViewModel.swift in Sources */,
 				2E12399229776B6000BC5684 /* ForgotPasswordView.swift in Sources */,
 				2E17CBB029788E8800B78B97 /* SessionUserDetails.swift in Sources */,
@@ -701,6 +728,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 2E12396B2977321100BC5684 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseDatabase;
+		};
+		2E2A951B299170260095A1AD /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2E12396B2977321100BC5684 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

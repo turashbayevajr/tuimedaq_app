@@ -121,15 +121,22 @@ struct HomeView1: View{
     }
     
     struct NewsView: View{
-        
-        var body: some View{
-            NavigationView{
-                VStack{
-                    
-                }
-                .navigationTitle("News")
-            }
-        }
+        @ObservedObject private var viewModel = newsViewModel()
+           
+          var body: some View {
+              NavigationView {
+                  List(viewModel.news) { news in
+                      VStack(alignment: .leading) {
+                          Text(news.name).font(.title)
+                          Text(news.description).font(.subheadline)
+                      }
+                  }.navigationBarTitle("News")
+                  .onAppear() {
+                      self.viewModel.fetchData()
+                  }
+              }
+          }
+    
     }
     
     struct HomeView: View {

@@ -17,9 +17,9 @@ struct LoginView: View {
     )
     
     var body: some View {
-        
+    
         VStack(spacing: 16){
-            
+       
             VStack(spacing: 16){
                 
                 InputTextFieldView(text: $vm.credentials.email,
@@ -66,6 +66,7 @@ struct LoginView: View {
         }
         .padding(.horizontal, 15)
         .navigationTitle("Login")
+        
         .alert(isPresented: $vm.hasError,
                content: {
             if case .failed(let error) = vm.state{
@@ -77,7 +78,7 @@ struct LoginView: View {
                              message: Text("Something went wrong"))
             }
         })
-    }
+        }
 }
 
 struct LoginView_Previews: PreviewProvider {
